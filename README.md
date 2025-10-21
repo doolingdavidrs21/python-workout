@@ -4,10 +4,16 @@ My book, "Python Workout" (https://PythonWorkout.com/) contains 50 exercises tha
 
 The main exercises have "pytest" tests, while the "beyond" exercises don't.
 
-While you're welcome to look at this code, you should *NOT* look at it before you work on a solution by yourself! You'll learn the most by actually putting in the work, and trying to solve the problems. Looking at the answer isn't nearly as useful to your learning.
+If you like this, you might also like:
 
-Don't forget that my free, weekly "Better developers" newsletter (currently read by about 18,000 people) contains a new Python-related article each week. Sign up at https://BetterDevelopersWeekly.com/ .
+- My YouTube channel: https://YouTube.com/reuvenlerner
+- Better developers, new, free articles about Python every week: https://BetterDevelopersWeekly.com/
+- "Bamboo Weekly," where I analyze data related to current events using Pandas: https://www.BambooWeekly.com/
+- My Bluesky feed: https://bsky.app/profile/lernerpython.com
+- My first book, "Python Workout": https://PythonWorkout.com/
+- My second book, "Pandas Workout": https://PandasWorkout.com/
+- LinkedIn, where I also post: https://linkedin.com/in/reuven
 
-Enjoy!
+Want to get access to all of my courses? Check out my classes at https://LernerPython.com/
 
-_Reuven_
+And of course, you can always e-mail me at reuven@LernerPython.com .
