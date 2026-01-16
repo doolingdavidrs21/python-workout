@@ -20,7 +20,7 @@ def run_timing():
                 continue
         run_times.append(run_time)
         mean_run_time = sum(run_times)/len(run_times)
-    print(f"Average of {mean_run_time}, over {len(run_times)} runs")
+    print(f"Average of {mean_run_time:.2f}, over {len(run_times)} runs")
 
 
 
