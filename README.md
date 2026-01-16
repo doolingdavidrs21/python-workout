@@ -9,16 +9,10 @@ The main exercises have "pytest" tests, while the "beyond" exercises don't.
 This project uses [uv](https://docs.astral.sh/uv/) for dependency management.
 
 ```bash
-# Initialize the project (creates pyproject.toml)
-uv init
+# Initialize the project with Python 3.12 (creates pyproject.toml)
+uv init --python 3.12
 
-# Pin to Python 3.12
-uv python pin 3.12
-
-# Create the virtual environment
-uv venv
-
-# Add dependencies (also syncs the venv)
+# Add dependencies (creates venv and uv.lock automatically)
 uv add pandas pytest
 ```
 
