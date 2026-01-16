@@ -14,6 +14,7 @@ def guessing_game():
             guess = int(input("Guess an integer between 0 and 100 inclusive: "))
         except ValueError as ve:
             print(f"an error occurred: {ve} Please enter an integer!")
+            continue
         if guess == target:
             print("Just right!")
             break
