@@ -4,6 +4,35 @@ My book, "Python Workout" (https://PythonWorkout.com/) contains 50 exercises tha
 
 The main exercises have "pytest" tests, while the "beyond" exercises don't.
 
+## Setup with uv
+
+This project uses [uv](https://docs.astral.sh/uv/) for dependency management.
+
+```bash
+# Initialize the project (creates pyproject.toml)
+uv init
+
+# Pin to Python 3.12
+uv python pin 3.12
+
+# Create the virtual environment
+uv venv
+
+# Add dependencies (also syncs the venv)
+uv add pandas pytest
+```
+
+To activate the virtual environment:
+```bash
+source .venv/bin/activate
+```
+
+Or run commands directly with uv:
+```bash
+uv run python your_script.py
+uv run pytest
+```
+
 If you like this, you might also like:
 
 - My YouTube channel: https://YouTube.com/reuvenlerner
