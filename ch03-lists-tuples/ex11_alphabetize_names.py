@@ -38,6 +38,17 @@ def sort_by_abs(seq):
         return sorted(seq, key=abs)
 
 
+def sort_by_vowel_count(seq):
+    """
+    Given a sequence of strings, return them sorted by
+    the number of vowels in each string.
+    """
+    vowels = 'aeiouAEIOU'
+    def vowel_count(s):
+        return sum(1 for char in s if char in vowels)
+    return sorted(seq, key=vowel_count,reverse=True)
+
+
 
 
 
@@ -47,6 +58,8 @@ if __name__ == "__main__":
         print(name)
     print(sort_by_abs((-10, 5, -30, 20, 0, -15, 25)))
     print(sort_by_abs([4,5,10,-90,3.4]))
+    print(sort_by_vowel_count(['apple', 'banana', 'kiwi', 'grapefruit', 'pear']))
+
 
 
 
