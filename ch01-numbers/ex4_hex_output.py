@@ -11,7 +11,7 @@ def hex_output(hex_num: int):
     decimal_value = 0
     for i, digit in enumerate(reversed_hex_string):
         if digit.isdigit():
-            decimal_value += int(digit) * (16 ** i)
+            decimal_value += int(digit, base=16) * (16 ** i)
 
     print(f"The decimal value of hexadecimal {hex_string} is {decimal_value}")
     return decimal_value
