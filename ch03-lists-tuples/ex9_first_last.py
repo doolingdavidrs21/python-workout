@@ -34,9 +34,15 @@ def plus_minus(seq):
     :param seq: Description
     """
     total = seq[0]
-    for index, value in enumerate(seq, start=1):
+    for index, value in enumerate(seq[1:]):
+        print(index, index % 2,  value, total)
         if index % 2 == 0:
-            total -= value
-        else:
             total += value
+        else:
+            total -= value
     return total
+
+
+if __name__ == "__main__":
+    print(plus_minus([10, 20, 30, 40, 50, 60]))
+
