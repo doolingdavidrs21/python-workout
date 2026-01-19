@@ -16,3 +16,9 @@ firstlast([1,2,3,4]) will return the list [1,4].
 
 def firstlast(seq):
     return seq[:1] + seq[-1:]
+
+
+def even_odd_sums(seq):
+    even_sum = sum(seq[::2])
+    odd_sum = sum(seq[1::2])
+    return [even_sum, odd_sum]
