@@ -22,3 +22,21 @@ def even_odd_sums(seq):
     even_sum = sum(seq[::2])
     odd_sum = sum(seq[1::2])
     return [even_sum, odd_sum]
+
+
+def plus_minus(seq):
+    """
+    Takes a list or tuple of numbers and retuns the result
+    of alternately adding and subtracting numbers from each
+    other.
+    So calling the function as plus_minus([10, 20, 30, 40, 50, 60]),
+    you’ll get back the result of 10+20-30+40-50+60, or 50.
+    :param seq: Description
+    """
+    total = seq[0]
+    for index, value in enumerate(seq, start=1):
+        if index % 2 == 0:
+            total -= value
+        else:
+            total += value
+    return total
