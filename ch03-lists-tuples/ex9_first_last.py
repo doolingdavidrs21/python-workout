@@ -42,7 +42,16 @@ def plus_minus(seq):
             total -= value
     return total
 
+def myzip(*args):
+    min_length = min(len(arg) for arg in args)
+    result = []
+    for i in range(min_length):
+        result.append(tuple(arg[i] for arg in args))
+    return result
+
+
 
 if __name__ == "__main__":
     print(plus_minus([10, 20, 30, 40, 50, 60]))
+    print(myzip([10,20,30], 'abc'))
 
