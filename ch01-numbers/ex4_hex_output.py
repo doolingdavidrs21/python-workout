@@ -9,10 +9,8 @@ def hex_output(hex_str: str):
     reversed_hex_string = hex_str[::-1]
     decimal_value = 0
     for i, digit in enumerate(reversed_hex_string):
-        if digit.isdigit():
-            decimal_value += int(digit, base=16) * (16 ** i)
-        elif digit.upper() in ['A','B','C','D','E','F']:
-            decimal_value += int(digit, base=16) * (16 ** i)
+        decimal_value += int(digit, base=16) * (16 ** i)
+
 
 
 
